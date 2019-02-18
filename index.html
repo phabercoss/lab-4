@@ -31,13 +31,15 @@
 			</label>
 		<p>
 			<label>Age:
-				<select>
+				<select name = "age_field">
+					<option value="0-18">Under 18</option>
 					<option value="18-24">18-24</option>
 					<option value="25-34">24-34</option>
 					<option value="35-44">35-44</option>
 					<option value="45-54">45-54</option>
 					<option value="65 and over">65 and over</option>
 				</select>
+			</label>
 		</p>
 	</fieldset>
 <h4> My Availability </h4>
@@ -47,29 +49,40 @@
 	<label>Days Available:
 </p>
 <p>
-		<input type="checkbox" name="Days Available" value="Sunday">Sunday
+		<input type="checkbox" name="available_field[]" value="Sunday">Sunday
 </p>
 <p>
-		<input type="checkbox" name="Days Available" value="Monday">Monday
+		<input type="checkbox" name="available_field[]" value="Monday">Monday
 </p>
 <p>
-		<input type="checkbox" name="Days Available" value="Tuesday">Tuesday
+		<input type="checkbox" name="available_field[]" value="Tuesday">Tuesday
 </p>
 <p>
-		<input type="checkbox" name="Days Available" value="Wednesday">Wednesday
+		<input type="checkbox" name="available_field[]" value="Wednesday">Wednesday
 </p>
 <p>
-		<input type="checkbox" name="Days Available" value="Thursday">Thursday
+		<input type="checkbox" name="available_field[]" value="Thursday">Thursday
 </p>
 <p>
-		<input type="checkbox" name="Days Available" value="Friday">Friday
+		<input type="checkbox" name="available_field[]" value="Friday">Friday
 </p>
 <p>
-		<input type="checkbox" name="Days Available" value="Saturday">Saturday
+		<input type="checkbox" name="available_field[]" value="Saturday">Saturday
 </p>
 	</label>
 </p>
+<p>
+	<label>Comments?
+</p>
+		<textarea name="comments_field" rows="4", cols="50">
+		</textarea>
+<p>
+	<input type="submit" value="Submit">
+</p>
 </fieldset>
-
+<p>
+<input type="hidden" name="hidden_field" value="phabercoss">
+</p>
+</form>
 </body>
 </html>
